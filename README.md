@@ -74,4 +74,4 @@ OBFUSCATED_Flags = -mllvm -enable-cffobf -mllvm -enable-strcry -mllvm -enable-su
 -> Disclaimer: This will have to do with runtime issues, not llvm or clang bugs. you report that to @llvm in llvm-project, not here
 
 # **License**
-none really. just dont't do stupid stuff i guess. im not responsible blah blah blah blah i went fucking insane it took me 9 hours for one build and 2 extra hours for after build bug bullshit and don't want someone else to go through it.
+none really. just dont' do stupid stuff i guess. im not responsible blah blah blah blah i went fucking insane it took me 9 hours for one build and 2 extra hours for after build bug bullshit and don't want someone else to go through it.
