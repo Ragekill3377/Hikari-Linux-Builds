@@ -15,9 +15,7 @@ Having problems with hikari not compiling or Linux? Don’t want to waste your t
 -> It's a pain to get ios/macos stuff to get working on linux, but people manage i guess if you're determined enough.
 
 # **Where do I get them?**
--> Above (github)
-
--> Google drive (releases)
+-> Releases
 
 (They might be compressed over and over, so it'll take a while to deflate. mine is over a giga-byte...)
 
