@@ -59,7 +59,7 @@ OBFUSCATED_Flags = -mllvm -enable-cffobf -mllvm -enable-strcry -mllvm -enable-su
 ```
 
 10. **BE CAREFUL THIS CAN STRAIN AND CRASH EVEN FUCKING NASA COMPUTERS!**
-11. experiment around with the flags, find fhe one that is just right.
+11. experiment around with the flags, find the setup that is just right.
 12. Pro tip: constenc ususally hogs resources and is the main crash causing culprit.
 13. You can add these flags in ‘‘CFFlags‘‘ and ‘‘CCFlags‘‘ and compile.
 
