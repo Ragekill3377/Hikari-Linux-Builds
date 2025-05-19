@@ -28,9 +28,12 @@ Having problems with hikari not compiling or Linux? Don’t want to waste your t
 -> You can use them with [theos](https://theos.dev/docs)
 
 -> on your host machine too! just set ‘‘ld‘‘ to your linux's linker (you get this by running:)
+
 ```
 which ld
 ```
+-> It may be tricky to get this working on host machine, especially newer clang builds. old ones with c++17 should work fine like 18.
+-> you'll need to make a huge command and include some theos headers too (you can enable verbosity in theos with ``MESSAGES=yes`` flag, and use that to figure out correct command.
 
 # **How to set it up with theos?**
  **You're going to have to follow each of these steps. It's not hard to do it properly if you listen.**
