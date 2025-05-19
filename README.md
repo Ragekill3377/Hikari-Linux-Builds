@@ -21,7 +21,7 @@ Having problems with hikari not compiling or Linux? Don’t want to waste your t
 
 # **Which toolchains are compiled?**
 -> LLVM18.1+
-
+-> LLVM19.1+
 -> More coming soon
 
 # **How Do I use them?**
@@ -57,6 +57,9 @@ SYSROOT = $THEOS/sdks/<iphonesdkfolder>.sdk
 ```
 OBFUSCATED_Flags = -mllvm -enable-cffobf -mllvm -enable-strcry -mllvm -enable-subobf -mllvm -enable-fco -mllvm -ah_objcruntime -mllvm -enable-antihook -mllvm -ah_inline -mllvm -enable-indibran -mllvm -indibran-enc-jump-target -mllvm -ah_antirebind -enable-constenc -mllvm -constenc_times=1 -mllvm -constenc_togv=1 -mllvm -constenc_togv_prob=50 -mllvm -constenc_subxor=1 -mllvm -constenc_subxor_prob=40
 ```
+
+**IMPORTANT:** ->
+**For llvm 19+ builds, add ``-mllvm -hikari``** in ``Obfuscate_FLAGS``.
 
 10. **BE CAREFUL THIS CAN STRAIN AND CRASH EVEN FUCKING NASA COMPUTERS!**
 11. experiment around with the flags, find the setup that is just right.
