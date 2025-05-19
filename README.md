@@ -47,7 +47,7 @@ ARCHS = arm64 # only system level apps/binaries use arm64e. but linux doesn't su
 BASE_HIKARI_PATH = $THEOS/toolchain/<name-of-toolchain-folder>/bin
 TARGET_CC = $(BASE_HIKARI_PATH)/clang
 TARGET_CXX = $(BASE_HIKARI_PATH)/clang++
-TARGET_LD =  $(BASE_HIKARI_PATH)/ld # this can be 'lld', instead of ld. check the linker name.
+TARGET_LD =  $(BASE_HIKARI_PATH)/ld.lld # this can be 'ld', instead of ld.lld. check the linker name. after 18.2+ builds, it's ld.lld, not ld.
 SYSROOT = $THEOS/sdks/<iphonesdkfolder>.sdk
 ```
 9. Now, do a quick compile test and see if all goes well. you may get errors regarding a 'module map' deprecation, so just listen to the error and rename that file from .map to .modulemap.
