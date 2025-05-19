@@ -34,7 +34,7 @@ which ld
 
 # **How to set it up with theos?**
  **You're going to have to follow each of these steps. It's not hard to do it properly if you listen.**
- 1. Download it and unzip it, until you reach a ‘‘my-toolchain‘‘ named folder or similar.
+ 1. Download it and unzip it, until you reach a ``my-toolchain`` named folder or similar.
  3. Download an old IOS sdk (example 13.7) from [theos/sdks](https://github.com/theos/sdks/releases)
  4. Move/Copy this toolchain to your $THEOS/toolchain path. There will be a ‘‘linux‘‘ folder here by default (should be, atleast...)
  5. Move/Copy this sdk folder after un-compressing it to $THEOS/sdks
@@ -47,7 +47,7 @@ ARCHS = arm64 # only system level apps/binaries use arm64e. but linux doesn't su
 BASE_HIKARI_PATH = $THEOS/toolchain/<name-of-toolchain-folder>/bin
 TARGET_CC = $(BASE_HIKARI_PATH)/clang
 TARGET_CXX = $(BASE_HIKARI_PATH)/clang++
-TARGET_LD =  $(BASE_HIKARI_PATH)/ld
+TARGET_LD =  $(BASE_HIKARI_PATH)/ld # this can be 'lld', instead of ld. check the linker name.
 SYSROOT = $THEOS/sdks/<iphonesdkfolder>.sdk
 ```
 9. Now, do a quick compile test and see if all goes well. you may get errors regarding a 'module map' deprecation, so just listen to the error and rename that file from .map to .modulemap.
