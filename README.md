@@ -21,8 +21,10 @@ Having problems with hikari not compiling or Linux? Don’t want to waste your t
 
 # **Which toolchains are compiled?**
 -> LLVM18.1+
+
 -> LLVM19.1+
--> More coming soon
+
+-> LLVM 20.1+
 
 # **How Do I use them?**
 -> You can use them with [theos](https://theos.dev/docs)
@@ -84,7 +86,7 @@ int main() { std::cout << "Hello, World!"; return 0; }
 -> This ``main.cpp`` will be our test file to compile.
 -> Now, we give the following command:
 ```
-~/theos/toolchain/my-toolchain5/bin/clang++ -std=c++17 -mllvm -hikari -mllvm --enable-strcry -mllvm --enable-constenc -mllvm --constenc_togv=1 -mllvm -strcry_prob=99 -mllvm --constenc_togv_prob=99 -fuse-ld=/usr/bin/ld main.cpp -o main
+~/theos/toolchain/my-toolchain5/bin/clang++ -std=c++17 -mllvm -hikari -mllvm --enable-strcry -mllvm --enable-constenc -mllvm --constenc_togv=1 -mllvm -strcry_prob=99 -mllvm --constenc_togv_prob=99 -fuse-ld=$(which ld) main.cpp -o main
 ```                      
 -> Change ``my-toolchain5`` to installed toolchain folder name.
 
@@ -119,12 +121,12 @@ Spend Time: 0.0003421s
 # **Compile info?**
 -> Proudly compiled on manjaro linux (i use arch, btw)
 
--> llvm18+
+-> llvm18+ used to compile these
 
--> compiled with system llvm, do not use gcc or g++ on linux to compile this.
+-> compiled with system llvm, do not use gcc or g++ on linux to compile this. Usually causes errors.
 
 # ** OPEN FOR BUG REPORTS!!! **
 -> Disclaimer: This will have to do with runtime issues, not llvm or clang bugs. you report that to @llvm in llvm-project, not here
 
 # **License**
-none really. just dont' do stupid stuff i guess. im not responsible blah blah blah blah i went fucking insane it took me 9 hours for one build and 2 extra hours for after build bug bullshit and don't want someone else to go through it.
+none really. just don't do stupid stuff i guess. im not responsible blah blah blah blah i went fucking insane it took me 9 hours for one build and 2 extra hours for after build bug bullshit and don't want someone else to go through it.
